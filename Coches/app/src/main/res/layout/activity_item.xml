@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivCar"
+        android:layout_width="209dp"
+        android:layout_height="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:srcCompat="@drawable/koenigsegg_jesko_white_background_white_565189_1280x640" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:hint="Nombre"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ivCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Fecha"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvKM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvKM"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="KM"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvCV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+
+    <TextView
+        android:id="@+id/tvCV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="CV"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvCombustible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/tvKM" />
+
+    <TextView
+        android:id="@+id/tvCombustible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Combustible "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvCambio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/tvCV" />
+
+    <TextView
+        android:id="@+id/tvCambio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="cambio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvREF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/tvCombustible" />
+
+    <TextView
+        android:id="@+id/tvREF"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:hint="REF"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
